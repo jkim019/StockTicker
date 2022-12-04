@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
 
     <script>
+    var searchtype= "name";
 
     </script>
   </head>
@@ -27,6 +28,18 @@
     <input type="submit" name="FormBtn" id="FormBtn" value="Search!" />
     </form>
 
+    <div id="result">
+
+
+
   </body>
+
+  <script>
+  $('input[type="radio"]').on('change', function() {
+  	const checked = $('input[name="name_or_ticker"]');
+  	searchtype = checked.val();
+  });
+
+  </script>
 
 </html>
