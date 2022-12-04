@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Stock Ticker</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="search.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+    </script>
+  </head>
+
+
+
+  <body>
+    <h1>Stock Ticker</h1>
+
+    <form action="/search" target="_blank" method="post" >
+    <h2>Choose Search Method</h2>
+    <input type="radio" name="name_or_ticker" value="name" />Name
+    <br>
+    <input type="radio" name="name_or_ticker" value="ticker" />Ticker
+    <br>
+    <input type="text" name="user_input"/>
+    <br>
+    <br>
+    <input type="submit" name="FormBtn" id="FormBtn" value="Search!" />
+    </form>
+
+  </body>
+
+</html>
